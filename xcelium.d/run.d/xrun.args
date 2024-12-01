@@ -1,0 +1,20 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-clean
+-elaborate
+-define
+functional
+-fault_file
+scripts/fault.file
+-fault_top
+top_level
+-fault_logfile
+fault_xrun_elab.log
+-v
+/opt/ic_tools/pdk/ams_c35_410/verilog/udp.v
+-v
+/opt/ic_tools/pdk/ams_c35_410/verilog/c35b4/c35_CORELIB.v
+top_level_syn.v
+testbenches/testbench_bist.v

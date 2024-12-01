@@ -1,0 +1,74 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Jan 08, 2024 at 00:34:06 WET
+xrun
+	-l verilog.log
+	-v /opt/ic_tools/pdk/ams_c35_410/verilog/udp.v
+	-v /opt/ic_tools/pdk/ams_c35_410/verilog/c35b4/c35_CORELIB.v
+	top_level_syn.v
+	testbenches/testbench_controller.v
+file: testbenches/testbench_controller.v
+	module worklib.testbench_controller:v
+		errors: 0, warnings: 0
+		Caching library 'c35_CORELIB' ....... Done
+		Caching library 'worklib' ....... Done
+		Caching library 'udp' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testbench_controller
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testbench_controller:v <0x0129eccd>
+			streams:   2, words: 18281
+		c35_CORELIB.DFE1:v <0x3d95a6dd>
+			streams:   0, words:     0
+		c35_CORELIB.DFS3:v <0x3503939f>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:               358      34
+		UDPs:                  163       3
+		Primitives:            470       8
+		Timing outputs:         97      18
+		Registers:              91       8
+		Scalar wires:          187       -
+		Expanded wires:          4       1
+		Always blocks:           1       1
+		Initial blocks:          1       1
+		Timing checks:         734       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.testbench_controller:v
+Loading snapshot worklib.testbench_controller:v .................... Done
+xcelium> source /opt/ic_tools/cad/xcelium20_09_hf001/tools/xcelium/files/xmsimrc
+xcelium> run
+
+--- Testing controller mode ---
+
+Starting full sequence by rising edge in START after reset...
+Full sequence generated, BIST_END=1
+
+Starting another full sequence by rising edge in START (no reset)...
+Rising edge in START while sequence is running...
+Another full sequence generated, BIST_END=1
+
+Starting new sequence...
+Rising edge in RESET mid-sequence...
+Sequence stopped by reset, BIST_END=0
+
+Starting new full sequence with START permanently at 1...
+Full sequence generated, BIST_END=1
+
+Starting new sequence...
+Rising edge in RESET...
+Rising edge in START...
+Reset still active, BIST_END=0
+Rising edge in START with RESET at zero...
+Another full sequence generated, BIST_END=1
+
+--- Finished! ---
+
+Simulation complete via $finish(1) at time 547460 US + 0
+./testbenches/testbench_controller.v:108         $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 08, 2024 at 00:34:09 WET  (total: 00:00:03)

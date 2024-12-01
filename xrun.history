@@ -1,0 +1,4 @@
+s1(08Jan2024:00:33:59):  xrun -l verilog.log -v /opt/ic_tools/pdk/ams_c35_410/verilog/udp.v -v /opt/ic_tools/pdk/ams_c35_410/verilog/c35b4/c35_CORELIB.v top_level_syn.v testbenches/testbench_normal.v 
+s2(08Jan2024:00:34:04):  xrun -l verilog.log -v /opt/ic_tools/pdk/ams_c35_410/verilog/udp.v -v /opt/ic_tools/pdk/ams_c35_410/verilog/c35b4/c35_CORELIB.v top_level_syn.v testbenches/testbench_bist.v 
+s3(08Jan2024:00:34:07):  xrun -l verilog.log -v /opt/ic_tools/pdk/ams_c35_410/verilog/udp.v -v /opt/ic_tools/pdk/ams_c35_410/verilog/c35b4/c35_CORELIB.v top_level_syn.v testbenches/testbench_controller.v 
+s4(08Jan2024:00:34:10):  xrun -clean -elaborate -define functional -fault_file scripts/fault.file -fault_top top_level -fault_logfile fault_xrun_elab.log -v /opt/ic_tools/pdk/ams_c35_410/verilog/udp.v -v /opt/ic_tools/pdk/ams_c35_410/verilog/c35b4/c35_CORELIB.v top_level_syn.v testbenches/testbench_bist.v 

@@ -1,0 +1,1407 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Jan 08, 2024 at 00:34:13 WET
+xrun
+	-R
+	-fault_concurrent
+	-nospecify
+	-notimingchecks
+	-delay_mode zero
+	-run
+	-exit
+	-define functional
+	-input scripts/strobes.tcl
+	-input fault_list.tcl
+	-fault_logfile fault_xrun_sim.log
+Loading snapshot worklib.testbench_bist:v .................... Done
+xcelium> source /opt/ic_tools/cad/xcelium20_09_hf001/tools/xcelium/files/xmsimrc
+xcelium> fs_strobe {top_level.bist_end top_level.pass_nfail} 
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.clock}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_118}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_228}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.scan_in}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_250}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda0[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_21}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_107}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_238}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda0[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_15}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_101}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_241}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda0[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_14}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_113}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_237}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda1[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_25}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_108}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_242}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda1[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_24}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_115}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_239}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda1[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_22}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_117}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_235}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda2[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_23}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_110}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_240}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda2[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_16}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_111}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_243}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda2[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_17}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_234}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda3[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_18}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_236}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda3[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_20}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_233}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_coda3[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_19}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_70}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_fu1}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_8}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_204}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_fu2}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_7}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_201}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_fu3}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_6}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_202}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_fu4}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_9}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_77}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_214}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.po[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_11}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_211}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.po[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_10}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_212}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.po[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_13}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_213}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.po[3]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_12}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_49}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_199}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_ru1}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_4}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_48}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_197}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_ru2}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_1}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_45}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_200}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_ru3}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_2}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_44}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_198}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_ru4}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_3}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_35}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_stato[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_0}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_n_50}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.circuito06_stato[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.scan_out}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_Q1}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_249}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_54}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_252}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.bist_end}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_n_203}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_174}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.vector[3]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_247}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.vector[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_246}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.vector[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_245}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.vector[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_244}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.bist_start}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_Q2}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_209}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_222}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_181}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_165}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_229}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_168}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_231}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_225}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_167}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_172}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_169}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_175}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_232}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_203}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_178}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_205}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_230}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_224}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_223}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_217}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_208}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_196}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_215}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_180}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_176}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_216}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_207}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_177}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_206}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_191}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_190}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_170}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_193}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_187}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_179}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_173}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_195}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_171}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_186}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_182}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_189}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_194}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.reset_internal}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_183}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.pi[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_185}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.pi[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.pi[3]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.pi[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.bist_running}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_184}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_251}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_166}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_state[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_state[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.reset}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.new_seq}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_19}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_per_count[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_109}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_per_count[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_132}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_per_count[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_144}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_per_count[3]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_147}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_per_count[4]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_1}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_55}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_0}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_99}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_118}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_134}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[3]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_145}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[4]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_152}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[5]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_156}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[6]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_161}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[7]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_3}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_9}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_163}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.controller_seq_count[8]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_2}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_139}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_4}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_117}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_42}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_63}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_14}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_33}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_52}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_112}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_8}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.inputLFSR_x[4]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_60}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_50}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_29}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[1]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_27}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_20}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[3]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_48}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[4]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_103}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[5]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_101}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[6]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_102}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[7]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_100}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.output_misr[8]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_119}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.misr_z[9]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_6}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_138}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.pass_nfail}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_67}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_49}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[0]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_47}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_66}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_45}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[2]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_44}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[3]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_26}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[4]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_39}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[5]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_65}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_41}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[6]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_38}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[7]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_37}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[8]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_46}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[9]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_64}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_58}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[10]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_34}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[11]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_40}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[12]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_62}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_53}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[13]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_23}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[14]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_61}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_31}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[15]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_28}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[16]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_30}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[17]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_32}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[18]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_43}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[19]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_22}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[20]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_51}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[21]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_25}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[22]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_24}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[23]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_21}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[24]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_126}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_120}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.stateLFSR_y[25]}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_5}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_160}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_159}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_158}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_154}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_155}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_149}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_150}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_141}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_142}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_136}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_143}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_130}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_133}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_10}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_7}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_56}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_125}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_57}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_123}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_137}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_131}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_13}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_106}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_107}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_95}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_124}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_98}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_105}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_104}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_108}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_97}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_18}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_11}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_16}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_35}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_15}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_17}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_36}
+xcelium> fault -inject -time 0 -type SA0 {testbench_bist.top_level.n_96}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.clock}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_228}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.scan_in}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_250}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda0[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_21}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_238}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda0[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_15}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_241}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda0[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_14}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_237}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda1[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_25}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_242}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda1[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_24}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_239}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda1[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_22}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_235}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda2[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_23}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_240}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda2[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_16}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_243}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda2[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_17}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_116}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_234}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda3[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_18}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_112}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_236}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda3[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_20}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_109}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_233}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_coda3[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_19}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_70}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_fu1}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_8}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_68}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_204}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_fu2}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_7}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_69}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_201}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_fu3}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_6}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_71}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_202}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_fu4}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_9}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_214}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.po[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_11}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_78}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_219}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_211}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.po[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_10}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_85}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_218}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_212}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.po[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_13}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_84}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_220}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_213}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.po[3]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_12}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_199}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_ru1}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_4}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_197}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_ru2}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_1}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_200}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_ru3}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_2}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_198}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_ru4}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_3}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_35}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_stato[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_0}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_n_50}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.circuito06_stato[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.scan_out}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_Q1}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_54}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_252}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.bist_end}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_174}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.vector[3]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_247}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.vector[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_246}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.vector[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_245}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.vector[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_244}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.bist_start}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_209}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_181}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_165}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_229}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_168}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_231}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_227}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_225}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_167}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_172}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_169}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_175}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_178}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_205}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_224}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_226}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_221}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_210}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_223}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_217}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_208}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_196}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_215}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_176}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_216}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_207}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_177}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_206}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_191}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_192}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_190}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_170}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_193}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_187}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_173}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_195}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_171}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_186}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_182}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_189}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_194}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.reset_internal}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_188}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_183}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.pi[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_185}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.pi[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.pi[3]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.pi[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.bist_running}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_184}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_166}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_state[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_state[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.reset}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.new_seq}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_93}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_19}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_per_count[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_122}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_109}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_per_count[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_135}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_132}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_per_count[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_146}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_144}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_per_count[3]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_151}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_147}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_per_count[4]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_55}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_59}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_0}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_110}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_99}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_128}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_118}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_140}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_134}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[3]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_148}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_145}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[4]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_153}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_152}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[5]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_157}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_156}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[6]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_162}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_161}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[7]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_9}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_164}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_163}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.controller_seq_count[8]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_139}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_4}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_127}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_117}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_84}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_42}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_14}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_81}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_33}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_80}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_52}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_8}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.inputLFSR_x[4]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_50}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_75}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_29}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[1]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_72}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_27}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_77}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_20}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[3]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_69}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_48}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[4]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_111}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_103}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[5]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_116}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_101}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[6]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_113}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_102}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[7]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_115}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_100}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.output_misr[8]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_129}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_119}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.misr_z[9]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_6}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_138}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.pass_nfail}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_49}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[0]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_92}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_47}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_45}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[2]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_91}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_44}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[3]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_90}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_26}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[4]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_89}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_39}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[5]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_41}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[6]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_86}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_38}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[7]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_94}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_37}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[8]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_83}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_46}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[9]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_58}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[10]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_82}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_34}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[11]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_87}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_40}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[12]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_53}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[13]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_79}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_23}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[14]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_31}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[15]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_88}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_28}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[16]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_78}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_30}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[17]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_85}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_32}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[18]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_68}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_43}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[19]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_76}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_22}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[20]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_74}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_51}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[21]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_73}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_25}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[22]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_71}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_24}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[23]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_70}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_21}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[24]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_120}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.stateLFSR_y[25]}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_5}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_160}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_159}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_158}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_154}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_155}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_149}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_150}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_141}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_142}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_136}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_143}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_130}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_133}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_7}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_56}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_57}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_123}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_137}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_131}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_13}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_114}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_107}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_121}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_95}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_124}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_105}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_104}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_108}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_18}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_12}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_11}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_16}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_35}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_15}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_17}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_36}
+xcelium> fault -inject -time 0 -type SA1 {testbench_bist.top_level.n_96}
+xcelium> run
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.pass_nfail) at strobe point (testbench_bist.top_level.pass_nfail) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.clock) at strobe point (testbench_bist.top_level.pass_nfail) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.reset_internal) at strobe point (testbench_bist.top_level.pass_nfail) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.reset) at strobe point (testbench_bist.top_level.pass_nfail) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.n_138) at strobe point (testbench_bist.top_level.pass_nfail) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.n_182) at strobe point (testbench_bist.top_level.pass_nfail) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.n_6) at strobe point (testbench_bist.top_level.pass_nfail) at time 5 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.bist_end) at strobe point (testbench_bist.top_level.bist_end) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.clock) at strobe point (testbench_bist.top_level.bist_end) at time 5 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_252) at strobe point (testbench_bist.top_level.bist_end) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.reset) at strobe point (testbench_bist.top_level.bist_end) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.n_10) at strobe point (testbench_bist.top_level.bist_end) at time 5 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.n_7) at strobe point (testbench_bist.top_level.bist_end) at time 5 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_125) at strobe point (testbench_bist.top_level.pass_nfail) at time 205 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_138) at strobe point (testbench_bist.top_level.pass_nfail) at time 205 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.controller_state[0]) at strobe point (testbench_bist.top_level.bist_end) at time 205 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_state[1]) at strobe point (testbench_bist.top_level.bist_end) at time 205 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.n_139) at strobe point (testbench_bist.top_level.bist_end) at time 205 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_127) at strobe point (testbench_bist.top_level.bist_end) at time 205 US.
+
+--- Testing BIST mode ---
+
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_117) at strobe point (testbench_bist.top_level.bist_end) at time 435 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_56) at strobe point (testbench_bist.top_level.bist_end) at time 465 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_98) at strobe point (testbench_bist.top_level.pass_nfail) at time 675 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_57) at strobe point (testbench_bist.top_level.pass_nfail) at time 675 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_121) at strobe point (testbench_bist.top_level.pass_nfail) at time 675 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.n_5) at strobe point (testbench_bist.top_level.bist_end) at time 685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_133) at strobe point (testbench_bist.top_level.bist_end) at time 685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_114) at strobe point (testbench_bist.top_level.bist_end) at time 1765 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_106) at strobe point (testbench_bist.top_level.bist_end) at time 10435 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_144) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_147) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_1) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_146) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_per_count[3]) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_151) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_per_count[4]) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_55) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_136) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_143) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_137) at strobe point (testbench_bist.top_level.bist_end) at time 55525 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_145) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_152) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_156) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_161) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_163) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_2) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_148) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[4]) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_153) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[5]) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_157) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[6]) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_162) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[7]) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_164) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[8]) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_160) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_159) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_155) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_150) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_142) at strobe point (testbench_bist.top_level.bist_end) at time 66565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_118) at strobe point (testbench_bist.top_level.bist_end) at time 67645 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_128) at strobe point (testbench_bist.top_level.bist_end) at time 67645 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[2]) at strobe point (testbench_bist.top_level.bist_end) at time 67645 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_108) at strobe point (testbench_bist.top_level.bist_end) at time 67645 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_93) at strobe point (testbench_bist.top_level.bist_end) at time 70555 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_per_count[0]) at strobe point (testbench_bist.top_level.bist_end) at time 70555 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_97) at strobe point (testbench_bist.top_level.bist_end) at time 70885 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_19) at strobe point (testbench_bist.top_level.bist_end) at time 75565 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_3) at strobe point (testbench_bist.top_level.bist_end) at time 101125 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_9) at strobe point (testbench_bist.top_level.bist_end) at time 101125 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_54) at strobe point (testbench_bist.top_level.bist_end) at time 135465 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.new_seq) at strobe point (testbench_bist.top_level.bist_end) at time 135465 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_249) at strobe point (testbench_bist.top_level.bist_end) at time 135475 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.bist_end) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_Q1) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_54) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_n_203) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_174) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.bist_start) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.bist_running) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_251) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_166) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_state[0]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_state[1]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.new_seq) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_per_count[0]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_109) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_per_count[1]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_132) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_per_count[2]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_per_count[3]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_per_count[4]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_55) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_0) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[0]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_99) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[1]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[2]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_134) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[3]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[4]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[5]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[6]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[7]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_9) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_seq_count[8]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_139) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_4) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_160) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_159) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_158) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_154) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_155) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_149) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_150) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_141) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_142) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_136) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_143) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_130) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_7) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_123) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_137) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_131) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_13) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_107) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_95) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_124) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_108) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_11) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_36) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_96) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.clock) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_Q1) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_252) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.bist_start) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.bist_running) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.reset) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_19) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_122) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_109) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_per_count[1]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_135) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_132) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_per_count[2]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_144) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_147) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_59) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_0) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[0]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_110) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_99) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[1]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_118) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_140) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_134) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.controller_seq_count[3]) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_145) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_152) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_156) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_161) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_163) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_117) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_5) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_158) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_154) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_149) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_141) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_130) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_133) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_56) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_123) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_131) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_13) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_107) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_95) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_124) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_12) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_11) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_36) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_96) at strobe point (testbench_bist.top_level.bist_end) at time 135685 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.pass_nfail) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_118) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_228) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.scan_in) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_250) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda0[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_21) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_107) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_238) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda0[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_15) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_101) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_241) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda0[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_14) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_113) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_237) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda1[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_25) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_108) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda1[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_24) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_115) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_239) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda1[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_22) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_117) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_235) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda2[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_23) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_110) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_240) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda2[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_16) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_111) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_243) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda2[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_17) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda3[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_18) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_236) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda3[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_20) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_233) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_coda3[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_19) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_70) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_fu1) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_8) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_204) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_fu2) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_7) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_201) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_fu3) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_6) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_202) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_fu4) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_9) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_77) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_214) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.po[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_11) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_211) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.po[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_10) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_212) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.po[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_13) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_213) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.po[3]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_12) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_49) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_199) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_ru1) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_4) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_48) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_197) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_ru2) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_1) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_45) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_200) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_ru3) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_2) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_44) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_198) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_ru4) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_3) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_35) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_stato[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_0) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_n_50) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.circuito06_stato[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.scan_out) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.vector[3]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_247) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.vector[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_246) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.vector[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_245) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.vector[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_244) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.controller_Q2) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_209) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_222) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_181) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_165) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_229) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_168) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_231) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_225) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_167) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_172) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_169) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_175) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_232) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.n_203) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_178) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_205) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_230) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_224) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_223) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_217) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_208) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.n_196) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_215) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_180) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_176) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_216) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_207) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_177) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_206) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_191) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.n_190) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_170) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.n_193) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_187) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_179) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_173) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_195) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_171) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_186) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_182) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_189) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_194) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_183) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_185) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA0 fault (testbench_bist.top_level.n_184) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_42) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_63) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_14) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_33) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_52) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_112) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_8) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.inputLFSR_x[4]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_60) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_50) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_29) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_27) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_20) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[3]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_48) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[4]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_103) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[5]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_101) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[6]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_102) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[7]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_100) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.output_misr[8]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_119) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.misr_z[9]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_6) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_67) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_49) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_47) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_66) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_45) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_44) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[3]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_26) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[4]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_39) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[5]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_65) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_41) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[6]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_38) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[7]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_37) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[8]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_46) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[9]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_64) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_58) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[10]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_34) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[11]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_40) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[12]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_62) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_53) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[13]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_23) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[14]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_61) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_31) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[15]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_28) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[16]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_30) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[17]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_32) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[18]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_43) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[19]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_22) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[20]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_51) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[21]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_25) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[22]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_24) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[23]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_21) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[24]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_126) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_120) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.stateLFSR_y[25]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_57) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_105) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_104) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_18) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_16) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_35) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_15) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA0 fault (testbench_bist.top_level.n_17) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_228) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.scan_in) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_250) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda0[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_21) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_238) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda0[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_15) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_241) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda0[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_14) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_237) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda1[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_25) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_242) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda1[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_24) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda1[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_22) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_235) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda2[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_23) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_240) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda2[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_16) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_243) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda2[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_17) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_234) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda3[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_18) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_112) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_236) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda3[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_20) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_109) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_233) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_coda3[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_19) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_70) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_fu1) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_8) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_68) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_204) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_fu2) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_7) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_69) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_201) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_fu3) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_6) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_71) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_202) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_fu4) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_9) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_214) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.po[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_11) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_78) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_219) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_211) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.po[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_10) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_85) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_218) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_212) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.po[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_13) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_84) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_220) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_213) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.po[3]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_12) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_ru1) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_4) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_197) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_ru2) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_1) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_200) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_ru3) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_2) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_198) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_ru4) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_3) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.circuito06_n_35) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_stato[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_n_0) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.circuito06_n_50) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.circuito06_stato[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.scan_out) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.vector[3]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_247) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.vector[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_246) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.vector[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_245) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.vector[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_244) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_209) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_181) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_165) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_229) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_168) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_231) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_227) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_225) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_167) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_172) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_169) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_175) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_178) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_205) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_224) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_226) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_221) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_210) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_223) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_217) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_208) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_196) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.n_215) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_176) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_216) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.n_207) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_177) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_206) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_191) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTPDT: [FLT] Potentially detected SA1 fault (testbench_bist.top_level.n_192) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_190) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_170) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_193) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_187) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_173) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_195) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_171) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_186) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_189) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_194) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.reset_internal) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_188) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_185) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_184) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_84) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_42) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_14) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_81) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_33) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_80) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_52) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.inputLFSR_x[4]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_50) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_75) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_29) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[1]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_72) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_27) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_77) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_20) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[3]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_69) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_48) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[4]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_111) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_103) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[5]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_116) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_101) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[6]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_113) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_102) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[7]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_115) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_100) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.output_misr[8]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_129) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_119) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.misr_z[9]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_49) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[0]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_92) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_47) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_45) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[2]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_91) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_44) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[3]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_90) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_26) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[4]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_89) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_39) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[5]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_41) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[6]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_86) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_38) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[7]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_94) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_37) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[8]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_83) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_46) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[9]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_58) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[10]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_82) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_34) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[11]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_87) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_40) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[12]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_53) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[13]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_79) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_23) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[14]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_31) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[15]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_88) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_28) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[16]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_78) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_30) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[17]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_85) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_32) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[18]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_68) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_43) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[19]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_76) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_22) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[20]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_74) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_51) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[21]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_73) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_25) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[22]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_71) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_24) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[23]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_70) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_21) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[24]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_120) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.stateLFSR_y[25]) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_105) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_104) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_18) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_16) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_35) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_15) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+xmsim: *N,FLTDT: [FLT] Detected SA1 fault (testbench_bist.top_level.n_17) at strobe point (testbench_bist.top_level.pass_nfail) at time 135695 US.
+Bist_end: 1
+MISR output: 010001100 (08c)
+Pass_nfail: 1
+
+--- Finished! ---
+
+xmsim: *N,FTUDPT: [FLT] Fault database data file is generated at /afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/fault_db/db_scope/test_fatima.novalocal_262321704674520059/xfs_186fcb81.ucd.
+Simulation complete via $finish(1) at time 136400 US + 0
+./testbenches/testbench_bist.v:28         $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 08, 2024 at 00:42:00 WET  (total: 00:07:47)
+xmsim: *N,FLTVWT: WRITE: Writing vSof /afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/fault_db/db_scope/test_fatima.novalocal_262321704674520059/xfs.vsof.

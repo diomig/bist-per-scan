@@ -1,0 +1,105 @@
+STIL 1.0 { Design 2005; } 
+Header {
+    Title "CTL for design 'circuito06'";
+    Date  "Mon Jan 08 00:33:23 WET 2024";
+    Source "Cadence Design Systems Genus 19.14-s108_1 STIL output";
+}
+Signals {
+    "clock" In; "reset" In; "request1" In;  
+    "request2" In; "request3" In; "request4" In; "scan_en" In;  
+    "scan_in" In;  
+ 
+    "grant_o[3]" Out; "grant_o[2]" Out; "grant_o[1]" Out;  
+    "grant_o[0]" Out; "scan_out" Out;  
+}
+SignalGroups {
+  // ... no bidirectional signals found
+  "all_inputs" = ' "clock" + "reset" + "request1" +  
+    "request2" + "request3" + "request4" + "scan_en" +  
+    "scan_in" '; // #signals=8
+  "all_outputs" = ' "grant_o[3]" + "grant_o[2]" + "grant_o[1]" +  
+    "grant_o[0]" + "scan_out" '; // #signals=5
+  "all_ports" =  ' "all_inputs"+ "all_outputs" '; // #signals=13
+  "_pi" = '"all_inputs"'; // #signals=8
+  "_po" = '"all_outputs"'; // #signals=5
+  "_si" = '"scan_in"'; // #signals=1
+  "_so" = '"scan_out"'; // #signals=1
+}
+ScanStructures {
+    ScanChain "chain1" {
+      ScanLength 26;
+     ScanIn "scan_in" ; 
+     ScanOut "scan_out" ; 
+     ScanEnable "scan_en";
+     ScanMasterClock "clock";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" { 
+      Period '50ns';
+      Waveforms {
+       "all_inputs" { 0 {  '0ns' D; } } 
+       "all_inputs" { 1 {  '0ns' U; } } 
+       "all_inputs" { Z {  '0ns' Z; } } 
+       "all_inputs" { N {  '0ns' N; } } 
+       "all_outputs" { X {  '0ns' X; } } 
+       "all_outputs" { H {  '0ns' X; '20ns' H; } } 
+       "all_outputs" { T {  '0ns' X; '20ns' T; } } 
+       "all_outputs" { L {  '0ns' X; '20ns' L; } } 
+       "clock" { P {  '0ns' D; '25ns' U; '45ns' D; } } 
+    }
+  }
+}
+//PatternBurst "__burst__" {
+//  PatList {
+//    "__pattern__" {
+//    }
+//  }
+//}
+//PatternExec {
+//    Timing "";
+//    PatternBurst "__burst__";
+//}
+Procedures {
+    "load_unload" {
+        W "_default_WFT_";
+        V {
+          "clock"=0; 
+          "scan_en"=1; 
+          }
+        Shift {
+          W "_default_WFT_";
+          V {
+         "_si"=#; "_so"=#;
+            "clock"=P; 
+            "scan_en"=1; 
+}
+        }
+    }
+    "capture" {
+        W "_default_WFT_";
+        F { 
+          }
+        V { "_pi"=\r8 #; "_po"=\r5 #; }
+    }
+    "capture_clock" {
+        W "_default_WFT_";
+        F { 
+        }
+        "forcePI": V { "_pi"=\r8 #; }
+        "measurePO": V { "_po"=\r5 #; }
+        "pulse": V { "clock"=P; }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        V { 
+            "clock" =0; 
+           }
+      // If required, add your test_controller specific initilization vectors here
+        V { 
+          "clock" =0; 
+        }
+    }
+}

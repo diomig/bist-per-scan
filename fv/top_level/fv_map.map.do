@@ -1,0 +1,206 @@
+
+//input ports
+add mapped point clock clock
+add mapped point bist_start bist_start
+add mapped point reset reset
+add mapped point pi[3] pi[3]
+add mapped point pi[2] pi[2]
+add mapped point pi[1] pi[1]
+add mapped point pi[0] pi[0]
+
+//output ports
+add mapped point bist_end bist_end
+add mapped point pass_nfail pass_nfail
+add mapped point po[3] po[3]
+add mapped point po[2] po[2]
+add mapped point po[1] po[1]
+add mapped point po[0] po[0]
+
+//inout ports
+
+
+
+
+//Sequential Pins
+add mapped point circuito06/coda0_reg[0]/Q circuito06_coda0_reg[0]/Q 
+add mapped point circuito06/coda0_reg[0]/QN circuito06_coda0_reg[0]/QN 
+add mapped point circuito06/coda0_reg[1]/Q circuito06_coda0_reg[1]/Q 
+add mapped point circuito06/coda0_reg[1]/QN circuito06_coda0_reg[1]/QN 
+add mapped point circuito06/coda0_reg[2]/Q circuito06_coda0_reg[2]/Q 
+add mapped point circuito06/coda0_reg[2]/QN circuito06_coda0_reg[2]/QN 
+add mapped point circuito06/coda1_reg[0]/Q circuito06_coda1_reg[0]/Q 
+add mapped point circuito06/coda1_reg[0]/QN circuito06_coda1_reg[0]/QN 
+add mapped point circuito06/coda1_reg[1]/Q circuito06_coda1_reg[1]/Q 
+add mapped point circuito06/coda1_reg[1]/QN circuito06_coda1_reg[1]/QN 
+add mapped point circuito06/coda1_reg[2]/Q circuito06_coda1_reg[2]/Q 
+add mapped point circuito06/coda1_reg[2]/QN circuito06_coda1_reg[2]/QN 
+add mapped point circuito06/coda2_reg[0]/Q circuito06_coda2_reg[0]/Q 
+add mapped point circuito06/coda2_reg[0]/QN circuito06_coda2_reg[0]/QN 
+add mapped point circuito06/coda2_reg[1]/Q circuito06_coda2_reg[1]/Q 
+add mapped point circuito06/coda2_reg[1]/QN circuito06_coda2_reg[1]/QN 
+add mapped point circuito06/coda2_reg[2]/Q circuito06_coda2_reg[2]/Q 
+add mapped point circuito06/coda2_reg[2]/QN circuito06_coda2_reg[2]/QN 
+add mapped point circuito06/coda3_reg[0]/Q circuito06_coda3_reg[0]/Q 
+add mapped point circuito06/coda3_reg[0]/QN circuito06_coda3_reg[0]/QN 
+add mapped point circuito06/coda3_reg[1]/Q circuito06_coda3_reg[1]/Q 
+add mapped point circuito06/coda3_reg[1]/QN circuito06_coda3_reg[1]/QN 
+add mapped point circuito06/coda3_reg[2]/Q circuito06_coda3_reg[2]/Q 
+add mapped point circuito06/coda3_reg[2]/QN circuito06_coda3_reg[2]/QN 
+add mapped point circuito06/fu1_reg/Q circuito06_fu1_reg/Q 
+add mapped point circuito06/fu1_reg/QN circuito06_fu1_reg/QN 
+add mapped point circuito06/fu2_reg/Q circuito06_fu2_reg/Q 
+add mapped point circuito06/fu2_reg/QN circuito06_fu2_reg/QN 
+add mapped point circuito06/fu3_reg/Q circuito06_fu3_reg/Q 
+add mapped point circuito06/fu3_reg/QN circuito06_fu3_reg/QN 
+add mapped point circuito06/fu4_reg/Q circuito06_fu4_reg/Q 
+add mapped point circuito06/fu4_reg/QN circuito06_fu4_reg/QN 
+add mapped point circuito06/grant_reg[0]/Q circuito06_grant_reg[0]/Q 
+add mapped point circuito06/grant_reg[0]/QN circuito06_grant_reg[0]/QN 
+add mapped point circuito06/grant_reg[1]/Q circuito06_grant_reg[1]/Q 
+add mapped point circuito06/grant_reg[1]/QN circuito06_grant_reg[1]/QN 
+add mapped point circuito06/grant_reg[2]/Q circuito06_grant_reg[2]/Q 
+add mapped point circuito06/grant_reg[2]/QN circuito06_grant_reg[2]/QN 
+add mapped point circuito06/grant_reg[3]/Q circuito06_grant_reg[3]/Q 
+add mapped point circuito06/grant_reg[3]/QN circuito06_grant_reg[3]/QN 
+add mapped point circuito06/ru1_reg/Q circuito06_ru1_reg/Q 
+add mapped point circuito06/ru1_reg/QN circuito06_ru1_reg/QN 
+add mapped point circuito06/ru2_reg/Q circuito06_ru2_reg/Q 
+add mapped point circuito06/ru2_reg/QN circuito06_ru2_reg/QN 
+add mapped point circuito06/ru3_reg/Q circuito06_ru3_reg/Q 
+add mapped point circuito06/ru3_reg/QN circuito06_ru3_reg/QN 
+add mapped point circuito06/ru4_reg/Q circuito06_ru4_reg/Q 
+add mapped point circuito06/ru4_reg/QN circuito06_ru4_reg/QN 
+add mapped point circuito06/stato_reg[0]/Q circuito06_stato_reg[0]/Q 
+add mapped point circuito06/stato_reg[0]/QN circuito06_stato_reg[0]/QN 
+add mapped point circuito06/stato_reg[1]/Q circuito06_stato_reg[1]/Q 
+add mapped point circuito06/stato_reg[1]/QN circuito06_stato_reg[1]/QN 
+add mapped point controller/Q1/q controller_Q1_reg/Q 
+add mapped point controller/Q1/q controller_Q1_reg/QN 
+add mapped point controller/Q2/q controller_Q2_reg/Q 
+add mapped point controller/Q2/q controller_Q2_reg/QN 
+add mapped point controller/new_seq_reg/q controller_new_seq_reg_reg/Q 
+add mapped point controller/new_seq_reg/q controller_new_seq_reg_reg/QN 
+add mapped point controller/per_count[0]/q controller_per_count_reg[0]/Q 
+add mapped point controller/per_count[0]/q controller_per_count_reg[0]/QN 
+add mapped point controller/per_count[1]/q controller_per_count_reg[1]/Q 
+add mapped point controller/per_count[1]/q controller_per_count_reg[1]/QN 
+add mapped point controller/per_count[2]/q controller_per_count_reg[2]/Q 
+add mapped point controller/per_count[2]/q controller_per_count_reg[2]/QN 
+add mapped point controller/per_count[3]/q controller_per_count_reg[3]/Q 
+add mapped point controller/per_count[3]/q controller_per_count_reg[3]/QN 
+add mapped point controller/per_count[4]/q controller_per_count_reg[4]/Q 
+add mapped point controller/per_count[4]/q controller_per_count_reg[4]/QN 
+add mapped point controller/seq_count[0]/q controller_seq_count_reg[0]/Q 
+add mapped point controller/seq_count[0]/q controller_seq_count_reg[0]/QN 
+add mapped point controller/seq_count[1]/q controller_seq_count_reg[1]/Q 
+add mapped point controller/seq_count[1]/q controller_seq_count_reg[1]/QN 
+add mapped point controller/seq_count[2]/q controller_seq_count_reg[2]/Q 
+add mapped point controller/seq_count[2]/q controller_seq_count_reg[2]/QN 
+add mapped point controller/seq_count[3]/q controller_seq_count_reg[3]/Q 
+add mapped point controller/seq_count[3]/q controller_seq_count_reg[3]/QN 
+add mapped point controller/seq_count[4]/q controller_seq_count_reg[4]/Q 
+add mapped point controller/seq_count[4]/q controller_seq_count_reg[4]/QN 
+add mapped point controller/seq_count[5]/q controller_seq_count_reg[5]/Q 
+add mapped point controller/seq_count[5]/q controller_seq_count_reg[5]/QN 
+add mapped point controller/seq_count[6]/q controller_seq_count_reg[6]/Q 
+add mapped point controller/seq_count[6]/q controller_seq_count_reg[6]/QN 
+add mapped point controller/seq_count[7]/q controller_seq_count_reg[7]/Q 
+add mapped point controller/seq_count[7]/q controller_seq_count_reg[7]/QN 
+add mapped point controller/seq_count[8]/q controller_seq_count_reg[8]/Q 
+add mapped point controller/seq_count[8]/q controller_seq_count_reg[8]/QN 
+add mapped point controller/state[0]/q controller_state_reg[0]/Q 
+add mapped point controller/state[0]/q controller_state_reg[0]/QN 
+add mapped point controller/state[1]/q controller_state_reg[1]/Q 
+add mapped point controller/state[1]/q controller_state_reg[1]/QN 
+add mapped point inputLFSR/x[0]/q inputLFSR_x_reg[0]/Q 
+add mapped point inputLFSR/x[0]/q inputLFSR_x_reg[0]/QN 
+add mapped point inputLFSR/x[1]/q inputLFSR_x_reg[1]/Q 
+add mapped point inputLFSR/x[1]/q inputLFSR_x_reg[1]/QN 
+add mapped point inputLFSR/x[2]/q inputLFSR_x_reg[2]/Q 
+add mapped point inputLFSR/x[2]/q inputLFSR_x_reg[2]/QN 
+add mapped point inputLFSR/x[3]/q inputLFSR_x_reg[3]/Q 
+add mapped point inputLFSR/x[3]/q inputLFSR_x_reg[3]/QN 
+add mapped point inputLFSR/x[4]/q inputLFSR_x_reg[4]/Q 
+add mapped point inputLFSR/x[4]/q inputLFSR_x_reg[4]/QN 
+add mapped point misr/z[0]/q misr_z_reg[0]/Q 
+add mapped point misr/z[0]/q misr_z_reg[0]/QN 
+add mapped point misr/z[1]/q misr_z_reg[1]/Q 
+add mapped point misr/z[1]/q misr_z_reg[1]/QN 
+add mapped point misr/z[2]/q misr_z_reg[2]/Q 
+add mapped point misr/z[2]/q misr_z_reg[2]/QN 
+add mapped point misr/z[3]/q misr_z_reg[3]/Q 
+add mapped point misr/z[3]/q misr_z_reg[3]/QN 
+add mapped point misr/z[4]/q misr_z_reg[4]/Q 
+add mapped point misr/z[4]/q misr_z_reg[4]/QN 
+add mapped point misr/z[5]/q misr_z_reg[5]/Q 
+add mapped point misr/z[5]/q misr_z_reg[5]/QN 
+add mapped point misr/z[6]/q misr_z_reg[6]/Q 
+add mapped point misr/z[6]/q misr_z_reg[6]/QN 
+add mapped point misr/z[7]/q misr_z_reg[7]/Q 
+add mapped point misr/z[7]/q misr_z_reg[7]/QN 
+add mapped point misr/z[8]/q misr_z_reg[8]/Q 
+add mapped point misr/z[8]/q misr_z_reg[8]/QN 
+add mapped point misr/z[9]/q misr_z_reg[9]/Q 
+add mapped point misr/z[9]/q misr_z_reg[9]/QN 
+add mapped point pass_nfail/q pass_nfail_reg/Q 
+add mapped point pass_nfail/q pass_nfail_reg/QN 
+add mapped point stateLFSR/y[0]/q stateLFSR_y_reg[0]/Q 
+add mapped point stateLFSR/y[0]/q stateLFSR_y_reg[0]/QN 
+add mapped point stateLFSR/y[1]/q stateLFSR_y_reg[1]/Q 
+add mapped point stateLFSR/y[1]/q stateLFSR_y_reg[1]/QN 
+add mapped point stateLFSR/y[2]/q stateLFSR_y_reg[2]/Q 
+add mapped point stateLFSR/y[2]/q stateLFSR_y_reg[2]/QN 
+add mapped point stateLFSR/y[3]/q stateLFSR_y_reg[3]/Q 
+add mapped point stateLFSR/y[3]/q stateLFSR_y_reg[3]/QN 
+add mapped point stateLFSR/y[4]/q stateLFSR_y_reg[4]/Q 
+add mapped point stateLFSR/y[4]/q stateLFSR_y_reg[4]/QN 
+add mapped point stateLFSR/y[5]/q stateLFSR_y_reg[5]/Q 
+add mapped point stateLFSR/y[5]/q stateLFSR_y_reg[5]/QN 
+add mapped point stateLFSR/y[6]/q stateLFSR_y_reg[6]/Q 
+add mapped point stateLFSR/y[6]/q stateLFSR_y_reg[6]/QN 
+add mapped point stateLFSR/y[7]/q stateLFSR_y_reg[7]/Q 
+add mapped point stateLFSR/y[7]/q stateLFSR_y_reg[7]/QN 
+add mapped point stateLFSR/y[8]/q stateLFSR_y_reg[8]/Q 
+add mapped point stateLFSR/y[8]/q stateLFSR_y_reg[8]/QN 
+add mapped point stateLFSR/y[9]/q stateLFSR_y_reg[9]/Q 
+add mapped point stateLFSR/y[9]/q stateLFSR_y_reg[9]/QN 
+add mapped point stateLFSR/y[10]/q stateLFSR_y_reg[10]/Q 
+add mapped point stateLFSR/y[10]/q stateLFSR_y_reg[10]/QN 
+add mapped point stateLFSR/y[11]/q stateLFSR_y_reg[11]/Q 
+add mapped point stateLFSR/y[11]/q stateLFSR_y_reg[11]/QN 
+add mapped point stateLFSR/y[12]/q stateLFSR_y_reg[12]/Q 
+add mapped point stateLFSR/y[12]/q stateLFSR_y_reg[12]/QN 
+add mapped point stateLFSR/y[13]/q stateLFSR_y_reg[13]/Q 
+add mapped point stateLFSR/y[13]/q stateLFSR_y_reg[13]/QN 
+add mapped point stateLFSR/y[14]/q stateLFSR_y_reg[14]/Q 
+add mapped point stateLFSR/y[14]/q stateLFSR_y_reg[14]/QN 
+add mapped point stateLFSR/y[15]/q stateLFSR_y_reg[15]/Q 
+add mapped point stateLFSR/y[15]/q stateLFSR_y_reg[15]/QN 
+add mapped point stateLFSR/y[16]/q stateLFSR_y_reg[16]/Q 
+add mapped point stateLFSR/y[16]/q stateLFSR_y_reg[16]/QN 
+add mapped point stateLFSR/y[17]/q stateLFSR_y_reg[17]/Q 
+add mapped point stateLFSR/y[17]/q stateLFSR_y_reg[17]/QN 
+add mapped point stateLFSR/y[18]/q stateLFSR_y_reg[18]/Q 
+add mapped point stateLFSR/y[18]/q stateLFSR_y_reg[18]/QN 
+add mapped point stateLFSR/y[19]/q stateLFSR_y_reg[19]/Q 
+add mapped point stateLFSR/y[19]/q stateLFSR_y_reg[19]/QN 
+add mapped point stateLFSR/y[20]/q stateLFSR_y_reg[20]/Q 
+add mapped point stateLFSR/y[20]/q stateLFSR_y_reg[20]/QN 
+add mapped point stateLFSR/y[21]/q stateLFSR_y_reg[21]/Q 
+add mapped point stateLFSR/y[21]/q stateLFSR_y_reg[21]/QN 
+add mapped point stateLFSR/y[22]/q stateLFSR_y_reg[22]/Q 
+add mapped point stateLFSR/y[22]/q stateLFSR_y_reg[22]/QN 
+add mapped point stateLFSR/y[23]/q stateLFSR_y_reg[23]/Q 
+add mapped point stateLFSR/y[23]/q stateLFSR_y_reg[23]/QN 
+add mapped point stateLFSR/y[24]/q stateLFSR_y_reg[24]/Q 
+add mapped point stateLFSR/y[24]/q stateLFSR_y_reg[24]/QN 
+add mapped point stateLFSR/y[25]/q stateLFSR_y_reg[25]/Q 
+add mapped point stateLFSR/y[25]/q stateLFSR_y_reg[25]/QN 
+
+
+
+//Black Boxes
+
+
+
+//Empty Modules as Blackboxes

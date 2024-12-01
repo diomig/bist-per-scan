@@ -1,0 +1,43 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN circuito06 ;
+
+SCANCHAINS 1 ;
+  - chain1_seg1_scan_clk_rising 
+    + PARTITION p_scan_clk_rising 
+      MAXBITS 26
+    + START PIN scan_in
+    + FLOATING 
+       coda0_reg[0] ( IN SD ) ( OUT QN ) 
+       coda0_reg[1] ( IN SD ) ( OUT QN ) 
+       coda0_reg[2] ( IN SD ) ( OUT QN ) 
+       coda1_reg[0] ( IN SD ) ( OUT QN ) 
+       coda1_reg[1] ( IN SD ) ( OUT QN ) 
+       coda1_reg[2] ( IN SD ) ( OUT QN ) 
+       coda2_reg[0] ( IN SD ) ( OUT QN ) 
+       coda2_reg[1] ( IN SD ) ( OUT QN ) 
+       coda2_reg[2] ( IN SD ) ( OUT QN ) 
+       coda3_reg[0] ( IN SD ) ( OUT QN ) 
+       coda3_reg[1] ( IN SD ) ( OUT QN ) 
+       coda3_reg[2] ( IN SD ) ( OUT QN ) 
+       fu1_reg ( IN SD ) ( OUT QN ) 
+       fu2_reg ( IN SD ) ( OUT QN ) 
+       fu3_reg ( IN SD ) ( OUT QN ) 
+       fu4_reg ( IN SD ) ( OUT QN ) 
+       grant_reg[0] ( IN SD ) ( OUT QN ) 
+       grant_reg[1] ( IN SD ) ( OUT QN ) 
+       grant_reg[2] ( IN SD ) ( OUT QN ) 
+       grant_reg[3] ( IN SD ) ( OUT QN ) 
+       ru1_reg ( IN SD ) ( OUT QN ) 
+       ru2_reg ( IN SD ) ( OUT QN ) 
+       ru3_reg ( IN SD ) ( OUT QN ) 
+       ru4_reg ( IN SD ) ( OUT QN ) 
+       stato_reg[0] ( IN SD ) ( OUT QN ) 
+       stato_reg[1] ( IN SD ) ( OUT QN ) 
+    + STOP PIN scan_out
+;
+
+END SCANCHAINS 
+END DESIGN 

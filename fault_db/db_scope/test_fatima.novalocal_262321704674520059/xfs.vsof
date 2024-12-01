@@ -1,0 +1,60 @@
+//
+// Written by NGen Library ver.1.2.6 2024-01-08 00:42:00
+//
+
+header vsof {
+        runner_version : <text>2</text> ;
+        version : <text>3</text> ;
+        vmanager_version : <text>10.20.xxx-yyy</text> ;
+}
+
+session_output "testbench_bist" {
+        original_session_dir : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2</text>;
+        runs_in_session : 1;
+        session_description : <text>Single run of 'testbench_bist'</text>;
+        session_dir : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2</text>;
+        session_end_time : <text>1704674520</text>;
+        session_name : <text>testbench_bist</text>;
+        session_owner : <text>ist196922</text>;
+        session_start_time : <text>1704674520</text>;
+        session_status : <text>post_session_script_done</text>;
+        session_type : <text>single_run</text>;
+        top_dir : <text>$ATTR(session_dir)/..</text>;
+}
+
+run 1 {
+        end_time : <text>1704674520</text>;
+        engine : <text>xmsim</text>;
+        fault_db : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/fault_db</text>;
+        full_title : <text>testbench_bist</text>;
+        host_name : <text>fatima.novalocal</text>;
+        inca_lib_dir : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/xcelium.d</text>;
+        job_status : <text>finished</text>;
+        log_file : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/xrun.log</text>;
+        original_test_path : <text>___testbench_bist</text>;
+        owner : <text>ist196922</text>;
+        run_dir : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/fault_db/db_scope/test_fatima.novalocal_262321704674520059</text>;
+        run_id : 1;
+        run_type : <text>simulation</text>;
+        simulator : <text>xmsim</text>;
+        snapshot_name : <text>testbench_bist</text>;
+        start_time : <text>1704674520</text>;
+        test_name : <text>testbench_bist</text>;
+
+        coverage_model "xfs" {
+                tool_name : <text>xfs</text>;
+                ucm_checksum : <text>186fcb81</text>;
+                ucm_file : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/fault_db/db_scope/xfs_186fcb81.ucm</text>;
+        }
+
+        coverage_data "xfs" {
+                tool_name : <text>xfs</text>;
+                ucd_file : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/fault_db/db_scope/test_fatima.novalocal_262321704674520059/xfs_186fcb81.ucd</text>;
+        }
+
+        filter "xfs" {
+                filter_files : <text>cdns_sim.flt</text>;
+                filter_id : <text>xfs</text>;
+                log_file : <text>/afs/.ist.utl.pt/users/2/2/ist196922/ptfse/Group2_Project2/xrun.log</text>;
+        }
+}
